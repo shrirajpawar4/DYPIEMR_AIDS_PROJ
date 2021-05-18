@@ -94,7 +94,7 @@ def circle_area(r):
     '''
     finds the area of circle of given radius
     Input: radius 
-    ouyput: area
+    output: area
     '''
     PI= 3.14
     a = r**2*PI 
