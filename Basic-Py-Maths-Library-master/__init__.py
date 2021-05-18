@@ -87,6 +87,19 @@ def exponent(base, index):
     while index > 1:
         x = base**index
         return x
+    
+#############################
+
+def circle_area(r):
+    '''
+    finds the area of circle of given radius
+    Input: radius 
+    ouyput: area
+    '''
+    PI= 3.14
+    a = r**2*PI 
+    return a 
+    
 
 
 
