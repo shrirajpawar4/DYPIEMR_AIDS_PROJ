@@ -26,5 +26,8 @@
                         
 7. `exponent()` - finds the exponent<br>
                   input:two numbers -base and index<br> 
-                  ouptut- base raised to the index.                    
- 
+                  ouptut- base raised to the index.     
+                  
+8. `circle_area()` - finds the area of circle <br>
+                     input: radius(r)
+                     output: ara of circle of given radius
