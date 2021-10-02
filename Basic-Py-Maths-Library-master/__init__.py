@@ -76,6 +76,33 @@ def MultiplyList(myList):
 
 ################################
 
+def ConvertToDegree(radian):
+    """
+    Converts radian to degree
+    input: angle in radian
+    output: angle in degree
+    """
+
+    radian = float(radian)
+    pi = 22/7
+    degree = float(radian * (180 / pi))
+    return degree
+
+################################
+
+def ConvertToRadian(degree):
+    """
+        Converts degree to radian
+        input: angle in degree
+        output: angle in radian
+        """
+    degree = float(degree)
+    pi = 22 / 7
+    radian = float(degree * (pi / 180))
+    return radian
+  
+################################
+
 def exponent(base, index):
     '''
     finds the exponent 
@@ -87,19 +114,89 @@ def exponent(base, index):
     while index > 1:
         x = base**index
         return x
-    
-#############################
 
-def circle_area(r):
+################################
+
+def Perimeter(a,b,c):
     '''
-    finds the area of circle of given radius
-    Input: radius 
-    output: area
+    Input: a = length of first side
+           b = length of second side
+           c = length of third side   
+    Output - (a+b+c)
     '''
-    PI= 3.14
-    a = r**2*PI 
-    return a 
+    return (a+b+c)
+
+################################
+
+def areaofcircle(r):
+    """
+    calculates area of a circle 
+    input:radius of circle
+    output:area of circle
+    """
+    PI = 3.14159265358
+    area = PI*(r**2)
+    return area
+
+###############################
+
+def circumferenceofcircle(r):
+    """
+    calculates circumference of circle
+    input:radius of circle
+    output:circumference of circle
+    """
+    PI = 3.14159265358
+    cmf = PI*2*r
+    return cmf
+
+###############################
+
+def factorial(n):
     
+    '''
+    calculates factorial
+    input: non negative integer
+    output: factorial of input
+    '''
+    
+    if n<0:
+        return 'Not defined for negative number'
+    if n==0:
+        return 1
+    else:
+        x= n*factorial(n-1)
+        return x
+    
+###############################    
+
+def fact_loop(num):
+    '''
+    input : num
+    output : factorial
+    '''
+    if num < 0:
+        return 0
+    if num == 0:
+        return 1
+
+    factorial = 1
+    for i in range(1, num + 1):
+        factorial = factorial * i
+    print(factorial)
+    
+################################
+
+def volume_cyl(r, h):
+    return (3.14 * (r**2) * h)
+
+################################
+
+    
+
+
+
+
 
 
 
